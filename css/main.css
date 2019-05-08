@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+/*Navigation Area*/
+
+nav {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-height: 60px;
+    background-color: #383E4C;
+    text-align: center;
+    z-index: 1000;
+}
+
+div.nav {
+    display: inline-block;
+    margin: auto 15px auto 15px;
+    padding: auto 15px auto 15px;
+}
+
+ul.navbar-menu li {
+    position: relative;
+    display: inline-block;
+    text-decoration-line: none;
+    margin: auto !important;
+    text-align: center;
+    padding: 10px;
+}
+
+li a {
+    text-decoration-line: none;
+    color: white;
+    margin: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid rgb(153, 152, 152);
+}
+
+header.header-section {
+    background-image: url("/img/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 40px;
+}
+
+div.header-container {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 70%;
+    transform: translate(-50%, -50%)
+    /* width: 70%;
+    height: 200px;
+    text-align: center;
+    margin: auto;*/
+}
+
+h1.main-tag {
+    text-transform: uppercase;
+    margin: auto;
+    font-size: 70px;
+    padding: 20px;
+    padding-bottom: 0;
+    color: #fff;
+}
+
+p.main-byline {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+div.About {
+    margin: 40px 20px auto 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+div.About-content {
+    width: 400px;
+    margin: 40px;
+    height: 450px;
+    background: rgb(238, 238, 238);
+}
+
+@media screen and (max-width: 360px) {
+    div.About-content {
+        max-width: 300px;
+        margin: 0 auto 30px;
+    }
+}
+
+div img {
+    width: 100%;
+    height: auto;
+}
+
+.About-content-title {
+    padding: 0 20px;
+}
+
+.content-descriprion {
+    padding: 0 20px 40px;
+}
+
+.green-text {
+    color: green;
+}
+
+m
