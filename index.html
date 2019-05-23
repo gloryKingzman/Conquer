@@ -10,26 +10,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+    </style>
     <title>Conquer Clone Project</title>
 </head>
 
 <body>
 
-    <nav class="navbar stickybar">
-        <div class="nav">
-            <ul class="navbar-menu" id="nav_menu">
-                <li><a href="#Section1">Homepage</a></li>
-                <li><a href="#Section2">About Us</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#contact-area">Contact</a></li>
-                <li><a href="#">External</a></li>
-                <li>
-                    <a href="javascript:void(0);" class="menu toggle" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
+    <nav class="navbar stickybar" id="navmenu">
+        <div class="nav navdrop">
+            <a href="#Section1">Homepage</a>
+            <a href="#Section2">About Us</a>
+            <a href="#Services">Services</a>
+            <a href="#contact-area">Contact</a>
+            <a href="#">External</a></li>
+            <a href="javascript:void(0);" class="menu toggle" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
 
-            </ul>
+
+
         </div>
     </nav>
 
@@ -232,11 +233,11 @@
     </footer>
     <script>
         function myFunction() {
-            var x = document.getElementById("nav_menu");
-            if (x.className === "navbar-menu") {
+            var x = document.getElementById("navmenu");
+            if (x.className === "nav") {
                 x.className += " responsive";
             } else {
-                x.className = "navbar-menu";
+                x.className = "nav";
             }
         }
     </script>
